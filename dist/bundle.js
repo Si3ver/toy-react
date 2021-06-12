@@ -86,18 +86,6 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/bar.js":
-/*!********************!*\
-  !*** ./src/bar.js ***!
-  \********************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return bar; });\nfunction bar() {\n  console.log(123);\n\n  for (var _i = 0, _arr = ['alice', 'bob']; _i < _arr.length; _i++) {\n    var item = _arr[_i];\n    console.log(\"name: \".concat(item));\n  }\n}\n\n//# sourceURL=webpack:///./src/bar.js?");
-
-/***/ }),
-
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -106,7 +94,19 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _bar_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./bar.js */ \"./src/bar.js\");\n\nObject(_bar_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _main_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./main.js */ \"./src/main.js\");\n\nObject(_main_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n\n//# sourceURL=webpack:///./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/main.js":
+/*!*********************!*\
+  !*** ./src/main.js ***!
+  \*********************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return main; });\nfunction main() {\n  function createElement(tagName, attributes) {\n    var e = document.createElement(tagName);\n\n    for (var p in attributes) {\n      e.setAttribute(p, attributes[p]);\n    }\n\n    for (var _len = arguments.length, children = new Array(_len > 2 ? _len - 2 : 0), _key = 2; _key < _len; _key++) {\n      children[_key - 2] = arguments[_key];\n    }\n\n    for (var _i = 0, _children = children; _i < _children.length; _i++) {\n      var child = _children[_i];\n\n      if (typeof child === 'string') {\n        child = document.createTextNode(child);\n      }\n\n      e.appendChild(child);\n    }\n\n    return e;\n  }\n\n  window.a = createElement(\"div\", {\n    id: \"a\",\n    \"class\": \"c\"\n  }, createElement(\"a\", {\n    href: \"#\"\n  }, \"link\"), createElement(\"div\", null, \"some texts!\"));\n  console.log(a);\n  document.body.append(window.a);\n}\n\n//# sourceURL=webpack:///./src/main.js?");
 
 /***/ })
 

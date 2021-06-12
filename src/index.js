@@ -1,3 +1,3 @@
-import bar from './bar.js'
+import main from './main.js'
 
-bar()
+main()
