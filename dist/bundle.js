@@ -94,7 +94,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return bar; });\nfunction bar() {\n  console.log(123)\n}\n\n\n//# sourceURL=webpack:///./src/bar.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return bar; });\nfunction bar() {\n  console.log(123);\n\n  for (var _i = 0, _arr = ['alice', 'bob']; _i < _arr.length; _i++) {\n    var item = _arr[_i];\n    console.log(\"name: \".concat(item));\n  }\n}\n\n//# sourceURL=webpack:///./src/bar.js?");
 
 /***/ }),
 
@@ -106,7 +106,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _bar_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./bar.js */ \"./src/bar.js\");\n\n\nObject(_bar_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])()\n\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _bar_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./bar.js */ \"./src/bar.js\");\n\nObject(_bar_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 
