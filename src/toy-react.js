@@ -2,7 +2,7 @@ export function createElement(type, attributes, ...children) {
   let e;
   if (typeof type === 'string') {
     e = document.createElement(type);
-  } else {
+  } else { // 自定义组件，类型是 function(class)
     e = new type;
   }
 
