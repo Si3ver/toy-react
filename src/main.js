@@ -1,8 +1,18 @@
-import { createElement } from './toy-react'
+import { createElement, Component, render } from './toy-react'
+
+// 自定义组件
+class MyComponent extends Component {
+  render () {
+    return <div>
+      <div>abc</div>
+      {this.children}
+    </div>
+  }
+}
 
 export default function main() {
-  document.body.appendChild(<div id="a" class="c">
+  render(<MyComponent id="a" class="c">
     <a href="#">link</a>
     <div>some texts!</div>
-  </div>)
+  </MyComponent>, document.body)
 }
